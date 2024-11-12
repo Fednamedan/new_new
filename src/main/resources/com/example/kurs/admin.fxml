@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E1D5D9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kurs.Admin">
+   <children>
+      <ImageView fitHeight="326.0" fitWidth="444.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@beck.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="297.0" fitWidth="444.0" layoutX="166.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@beck.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="-10.0" prefHeight="114.0" prefWidth="610.0" style="-fx-background-color: #B7A7AE; -fx-border-color: #000000; -fx-background-radius: 10; -fx-border-radius: 10;" AnchorPane.bottomAnchor="296.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-10.0">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="17.0" prefHeight="59.0" prefWidth="76.0" style="-fx-background-color: #F6F2F6; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #000000;" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="513.0" AnchorPane.topAnchor="17.0">
+               <children>
+                  <ImageView fitHeight="48.0" fitWidth="67.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="5.0">
+                      <image>
+                          <Image url="@admin_icon.png" />
+                      </image>
+                  </ImageView>
+
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <ListView fx:id="idspis" layoutX="42.0" layoutY="110.0" prefHeight="140.0" prefWidth="526.0" style="-fx-background-color: #E1D5D9;" />
+      <TextField fx:id="cenaedit" accessibleHelp="enter login" layoutX="394.0" layoutY="291.0" promptText="price" style="-fx-background-color: #58545B; -fx-border-color: #635a40; -fx-border-radius: 60; -fx-background-radius: 60;" />
+      <TextField fx:id="markaedit" accessibleHelp="enter login" layoutX="220.0" layoutY="291.0" promptText="mark" style="-fx-background-color: #58545B; -fx-border-color: #635a40; -fx-border-radius: 60; -fx-background-radius: 60;" />
+      <TextField fx:id="nameedit" accessibleHelp="enter login" layoutX="48.0" layoutY="291.0" promptText="name" style="-fx-background-color: #58545B; -fx-border-color: #635a40; -fx-border-radius: 60; -fx-background-radius: 60;" />
+      <Button fx:id="editprod" layoutX="221.0" layoutY="332.0" mnemonicParsing="false" onAction="#edit" prefHeight="28.0" prefWidth="151.0" style="-fx-background-color: #1C252C; -fx-border-color: #E1D5D9; -fx-background-radius: 10; -fx-border-radius: 10; -fx-text-fill: #F6F2F6;" text="edit" />
+      <AnchorPane layoutX="-7.0" layoutY="252.0" prefHeight="28.0" prefWidth="622.0" style="-fx-background-color: #B7A7AE; -fx-border-color: #000000; -fx-background-radius: 10; -fx-border-radius: 10;">
+         <children>
+            <Label layoutX="14.0" layoutY="6.0" text="edit product" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="250.0" style="-fx-background-color: #80697d" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kurs.Addproduct">
+    <children>
+        <Button fx:id="addbut" layoutX="50.0" layoutY="351.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="151.0" style="-fx-background-color: #1C252C; -fx-border-color: #E1D5D9; -fx-background-radius: 10; -fx-border-radius: 10; -fx-text-fill: #F6F2F6;" text="add" />
+        <AnchorPane layoutY="-7.0" prefHeight="91.0" prefWidth="250.0" style="-fx-background-color: #B7A7AE; -fx-border-color: #000000; -fx-background-radius: 10; -fx-border-radius: 10;">
+            <children>
+                <Label layoutX="78.0" layoutY="34.0" text="add product">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <TextField fx:id="cena" accessibleHelp="enter login" layoutX="43.0" layoutY="186.0" promptText="price" style="-fx-background-color: #58545B; -fx-border-color: #635a40; -fx-border-radius: 60; -fx-background-radius: 60;" />
+        <TextField fx:id="marka" accessibleHelp="enter login" layoutX="43.0" layoutY="149.0" promptText="mark" style="-fx-background-color: #58545B; -fx-border-color: #635a40; -fx-border-radius: 60; -fx-background-radius: 60;" />
+        <TextField fx:id="name" accessibleHelp="enter login" layoutX="43.0" layoutY="111.0" promptText="name" style="-fx-background-color: #58545B; -fx-border-color: #635a40; -fx-border-radius: 60; -fx-background-radius: 60;" />
+        <TextField fx:id="codeproduct" accessibleHelp="enter login" layoutX="43.0" layoutY="222.0" promptText="code type" style="-fx-background-color: #58545B; -fx-border-color: #635a40; -fx-border-radius: 60; -fx-background-radius: 60;" />
+    </children>
+</AnchorPane>
