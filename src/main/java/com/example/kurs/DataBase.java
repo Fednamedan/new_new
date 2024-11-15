@@ -12,7 +12,7 @@ public class DataBase {
     //переменные для подключения к базе данных
     private final String HOST = "localhost";
     private final String PORT = "13306";
-    private final String DB_NAME = "testt";
+    private final String DB_NAME = "test";
     private final String LOGIN = "test";
     private final String PASS = "test";
     //установка подключения
@@ -199,7 +199,7 @@ public class DataBase {
 
     // создание заказа
     void insertZakazi(String adres_pokupatela, int id_user, int id_sotrudnik)throws SQLException, ClassNotFoundException{
-        String sql ="INSERT INTO `mydb`.`zakazi`(adres_pokupatela, klient_idklient, sotrudniki_idsotrudniki) values(?,?,?) ";
+        String sql ="INSERT INTO `test`.`zakazi`(adres_pokupatela, klient_idklient, sotrudniki_idsotrudniki) values(?,?,?) ";
         PreparedStatement prSt = getDbConnection().prepareStatement(sql);
         prSt.setString(1, adres_pokupatela);
         prSt.setInt(2, id_user);
@@ -226,7 +226,7 @@ public class DataBase {
     }
     //обавление продукта в базу данных
     void newProduct(String name ,String marka , int cena , int kode ) throws SQLException, ClassNotFoundException {
-        String sql = "INSERT INTO `mydb`.`towars`(`nazvanie`, `marka`, `cena`, `kod_tipa`) VALUES (?,?,?,?)";
+        String sql = "INSERT INTO `test`.`towars`(`nazvanie`, `marka`, `cena`, `kod_tipa`) VALUES (?,?,?,?)";
         PreparedStatement prSt = getDbConnection().prepareStatement(sql);
         prSt.setString(1, name);
         prSt.setString(2, marka);

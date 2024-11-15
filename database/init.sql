@@ -1,7 +1,7 @@
 
-create database if not exists testt;
+create database if not exists test;
 
-use testt;
+use test;
 
 CREATE TABLE `klient` (
   `idklient` int NOT NULL AUTO_INCREMENT,
