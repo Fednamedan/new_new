@@ -87,7 +87,6 @@ public class Skip {
         List<OrderDetails> orderDetailsList = db.getOrderDetails(userId);
         controller.loadOrderDetails(orderDetailsList);
         Stage stage = new Stage();
-        stage.getIcons().add(new Image("file:img/icon.png"));
         stage.setScene(new Scene(root));
         stage.show();
     }

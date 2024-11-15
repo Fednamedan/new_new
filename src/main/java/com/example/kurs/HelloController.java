@@ -83,7 +83,6 @@ public class HelloController {
                     Stage stage = new Stage();
                     Scene scene = new Scene(fxmlLoader.load(), 250, 400);
                     stage.setTitle("registration");
-                    stage.getIcons().add(new Image("file:img/icon.png"));
                     stage.setScene(scene);
                     stage.show();
                 } catch (IOException e) {

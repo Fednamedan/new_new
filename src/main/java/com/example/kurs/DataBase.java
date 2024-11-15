@@ -31,7 +31,6 @@ public class DataBase {
         String sql = "SELECT * FROM towars";
         Statement statement = getDbConnection().createStatement();
         ResultSet res = statement.executeQuery(sql);
-
         ArrayList<ProductData> stud = new ArrayList<>();
         while(res.next())
             stud.add(new ProductData(res.getString("nazvanie") ,res.getString("marka") , res.getString("cena"), res.getString("photo")));
