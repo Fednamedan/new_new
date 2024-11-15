@@ -117,7 +117,7 @@ public class CreateOrder {
                     Stage stage = new Stage();
                     Scene scene = new Scene(fxmlLoader.load(), 600, 400);
                     stage.setTitle("products");
-                    stage.getIcons().add(new Image("file:C:/Users/fedia/IdeaProjects/kurs/icon.png"));
+                    stage.getIcons().add(new Image("file:img/icon.png"));
                     stage.setScene(scene);
                     stage.show();
                 } catch (IOException e) {

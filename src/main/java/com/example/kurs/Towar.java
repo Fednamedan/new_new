@@ -61,7 +61,7 @@ public class Towar extends ListCell<ProductData> {
 
             if (photoPath == null) {
                 // Load default image
-                Image defaultImage = new Image("nullphoto.jpg");
+                Image defaultImage = new Image("img/nullphoto.jpg");
                 idimg.setImage(defaultImage);
             } else {
                 File file = new File(photoPath);
