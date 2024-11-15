@@ -11,8 +11,8 @@ import java.util.List;
 public class DataBase {
     //переменные для подключения к базе данных
     private final String HOST = "localhost";
-    private final String PORT = "3306";
-    private final String DB_NAME = "kurs";
+    private final String PORT = "13306";
+    private final String DB_NAME = "testt";
     private final String LOGIN = "test";
     private final String PASS = "test";
     //установка подключения
